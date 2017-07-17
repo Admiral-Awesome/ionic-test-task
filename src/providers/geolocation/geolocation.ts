@@ -22,7 +22,8 @@ export class GeolocationProvider {
       }, err => {
         alert(JSON.stringify(err));
       });
-
+      
+      this.startWatchingCoordinates();
     });
   }
   // handle coordinates watching and show to view

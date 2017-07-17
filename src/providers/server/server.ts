@@ -10,7 +10,7 @@ export class ServerProvider {
   
   getData() : Promise<ServerData[]> {
     return new Promise( (resolve, reject) => {
-      this.data = Array(Math.floor(Math.random()*5) + 1).fill({ title : 'title', text : 'description'});
+      this.data = Array(Math.floor(Math.random()*5) + 3).fill({ title : 'title', text : 'description'});
       setTimeout( () => {
         resolve(this.data);
       }, 1500);

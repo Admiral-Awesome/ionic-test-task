@@ -8,9 +8,10 @@
 </ion-header>
 
 <ion-content padding>
-  <h1>coordinates :
-    <div *ngIf="geolocationProvider.phoneCoordinate">{{ 'lat: ' + geolocationProvider.phoneCoordinate.lat + ' lon\n, ' + geolocationProvider.phoneCoordinate.lon}} </div>
-    <div *ngIf="!geolocationProvider.phoneCoordinate"> Loading .... </div> </h1>
+  <h1>coordinates : </h1>
+    <h4><div *ngIf="geolocationProvider.phoneCoordinate">{{ 'lat: ' + geolocationProvider.phoneCoordinate.lat  }}
+       <br>{{'lon:' + geolocationProvider.phoneCoordinate.lon}} </div>
+    <div *ngIf="!geolocationProvider.phoneCoordinate"> Loading .... </div> </h4>
 
   <ion-card *ngFor="let item of comopnentData; let i = index">
     
